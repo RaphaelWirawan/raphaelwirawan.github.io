@@ -1,0 +1,20 @@
+.hobby {
+	background-color:grey;
+	color: white;
+	padding: 10px;
+}
+body {
+	background-color: white;
+	animation-direction: normal;
+}
+h1 {
+	color: black;
+	text-align: Center;
+	font-family: advent-pro; 
+}
+p {
+	font-size: 17px;
+	font-family: allerta;
+	text-align: Center;
+	color: black;
+}
