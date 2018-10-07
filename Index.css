@@ -1,3 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+	background:url("willian-justen-de-vasconcellos-603962-unsplash.JPG");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+
+}
+
 .hobby {
 	background-color:grey;
 	color: white;
@@ -17,4 +30,9 @@ p {
 	font-family: allerta;
 	text-align: Center;
 	color: black;
+}
+
+.p2nd {
+    font-size:16px;
+    text-align:left;
 }
