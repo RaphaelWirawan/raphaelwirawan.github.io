@@ -1,0 +1,256 @@
+/*min-height: 100vh;
+	replaced by height */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+    padding: 0;
+	height: 120%;
+    display: flex;
+	flex: 1;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	overflow-x: hidden
+}
+
+.author-name {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 60%;
+	left: 45%;
+	text-align: right;
+}
+
+.r {
+	color: #ff640a;
+}
+h1 {
+	font-size:50px;
+	font-family: "Product Sans";
+	color: #e6e6e6;
+	letter-spacing: 6px;
+	margin: -5px;
+	font-weight: 10;
+}
+
+/*.upperName {
+	position: absolute;
+	left: 40%;
+}
+
+.lowerName {
+	position: absolute;
+	left: 50%;
+}
+*/
+.bullets {
+	font-family: "Product Sans";
+	color: rgb(199, 199, 199);
+	align-items: center;
+	letter-spacing: 2px;
+	list-style: none;
+	line-height: 70px;
+	font-size: 220%;
+	position: absolute;
+	top: 45%;
+	right: 60%;
+	width: 300px;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+
+  }
+
+  .section-left {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: #1a1a1a;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 60%;
+  }
+
+  .section-right {
+	background-color: black;
+	position: absolute;
+	left: 40%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+  }
+
+.Logo {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 10%;
+	left: 37%;
+}
+
+.intro {
+	position: absolute;
+	right: 10vw;
+	top: 10vh;
+}
+
+h3 {
+	font-size: 40px;
+	font-family: "product sans";
+	color: #c2c2c2;
+	letter-spacing: 3px;
+	margin: 0;
+}
+
+h2 {
+	color: rgb(233, 233, 233);
+	font-size: 50px;
+	margin: 0;
+}
+
+h6 {
+	color: #bbbbbb;
+	font-family: "product sans";
+	font-size: 15px;
+	font-weight: 0;
+	margin: 0;
+	position: fixed;
+	top: 7px;
+	left: 3px;
+	width: 100px;
+}
+
+.contact {
+	position: fixed;
+	top: 25px;
+	left: 28px;
+	margin: 0;
+	background-color: none;
+  	border: #bbbbbb solid;
+ 	color: white;
+ 	padding: 15px 52px;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	display: inline-block;
+	margin: 0;
+ 	cursor: pointer;
+
+	/*border: 2px solid;
+	border-color: #bbbbbb;
+	height: 25px;
+	width: 100px;*/
+}
+
+.contact:hover {
+	border: #ff640a solid;
+	
+}
+
+/* ScrollBar */
+.scrollbar {
+    background-color: #F5F5F5;
+    float: left;
+    height: 300px;
+    margin-bottom: 25px;
+    margin-left: 22px;
+    margin-top: 40px;
+    width: 65px;
+    overflow-y: scroll;
+}
+
+.force-overflow {
+    min-height: 450px;
+}
+
+#style-1::-webkit-scrollbar {
+    width: 8px;
+	background-color: #F5F5F5;
+} 
+
+#style-1::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+#style-1::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+}
+
+/* To hide Scrollbar 
+::-webkit-scrollbar {
+    display: none;
+}
+*/
+
+.icon {
+	filter: invert(1);
+	/*position: absolute;
+	bottom: 1px;
+	left: 1px;*/
+	width: 53%;
+	margin: 0;
+}
+
+.iconContainer {
+	margin-left: 20%;
+	margin-top: 90%;
+	/*justify-content: center;*/
+}
+
+.column {
+	float: left;
+	width: 12.5%;
+	padding: 5px;
+  }
+  
+  .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+  }
+  
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 125px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 129%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+  }
+  
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 60%;
+	margin-left: -38px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+  
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+  }
